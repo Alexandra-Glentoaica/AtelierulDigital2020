@@ -1,4 +1,4 @@
-package lab1;
+package Laborator1;
 
 public class Main {
     private static int semester=2; //static = instanta de clasa
