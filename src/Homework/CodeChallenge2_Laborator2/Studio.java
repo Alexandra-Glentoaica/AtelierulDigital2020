@@ -11,6 +11,7 @@ public class Studio {
         this.contor=f.length;
     }
 
+
     public String getNume() {
         return nume;
     }
@@ -19,13 +20,36 @@ public class Studio {
         return contor;
     }
 
+    public Film[] getLista_filme() {
+        return lista_filme;
+    }
 
-    /*public String actorNames(Studio array[], Actor a){
-        String s=" ";
-        for(int i=0;i<array.length;i++){
-            if(array[i].)
+    public int count(){
+        int count = 0;
+        for(Film film:lista_filme){
+            if(film!=null)
+                count++;
         }
-        return s;
-    }*/
+        return count;
+    }
+
+    public boolean hasActor(String actorName){
+        for(Film film:lista_filme){
+            if(film!=null && film.getActorByName(actorName)!=null){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public String[] getFilmNameWithActorAboveAge(int age){
+        String[] toReturn=new String[10];
+        int i=0;
+        for(Film film:lista_filme){
+            if(film!=null && film.hasActorsAboveAge(age))
+                toReturn[i++]=film.getNume();
+        }
+        return toReturn;
+    }
 
 }

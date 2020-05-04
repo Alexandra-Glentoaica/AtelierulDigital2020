@@ -18,4 +18,29 @@ public class Film {
     public String getNume() {
         return nume;
     }
+
+    public Actor[] getLista_actori() {
+        return lista_actori;
+    }
+
+
+
+    public Actor getActorByName(String actorName){
+        for(Actor actor:lista_actori){
+            if(lista_actori!=null && actor.getNume().equals(actorName)){
+                return actor;
+            }
+        }
+        return null;
+    }
+
+    public boolean hasActorsAboveAge(int age){
+        for(Actor actor:lista_actori){
+            if(actor!=null && actor.getVarsta()>age){
+                return true;
+            }
+        }
+        return false;
+    }
+
 }

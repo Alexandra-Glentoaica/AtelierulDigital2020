@@ -21,16 +21,7 @@ public class Actor {
         return varsta;
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Actor)) return false;
-        Actor actor = (Actor) o;
-        return getNume().equals(actor.getNume());
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(getNume());
+    public Premiu[] getLista_premii() {
+        return lista_premii;
     }
 }
