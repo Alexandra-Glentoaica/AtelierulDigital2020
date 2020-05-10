@@ -14,11 +14,13 @@ public class Main {
             System.out.println();
         Pizza p4= pizzaFactory2.orderPizza("Veggie");
             System.out.println();
+        Pizza p5=pizzaFactory2.orderPizza("");
 
         //System.out.println(p1);
         //System.out.println(p2);
         System.out.println(p3);
         System.out.println(p4);
+        System.out.println(p5);
 
     }
 }

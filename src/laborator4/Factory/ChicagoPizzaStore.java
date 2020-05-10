@@ -4,7 +4,7 @@ public class ChicagoPizzaStore extends PizzaFactory{
 
     @Override
     public Pizza createPizza(String type) { /*Fiecare "obiect" ce extinde PizzaFactory trebuie sa implementeze in propriul sau fel metoda "createPizza"*/
-        Pizza pizza=null;
+        Pizza pizza=new DefaultPizza();
 
         if(type.equals("SeaFruit")){
             pizza=new ChicagoSeaFruitPizza();
