@@ -2,7 +2,7 @@ package laborator4.Factory;
 
 public abstract class PizzaFactory {
 
-   public abstract Pizza createPizza(String type);
+   protected abstract Pizza createPizza(String type);
 
    public Pizza orderPizza(String type){
        Pizza pizza;

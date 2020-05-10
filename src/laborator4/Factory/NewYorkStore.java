@@ -12,9 +12,9 @@ public class NewYorkStore extends PizzaFactory {
         else if(type.equals("Cheese")){
             pizza = new NYCheesePizza();
         }
-        /*else if(type.equals("Ananas")){
+        else if(type.equals("Ananas")){
             pizza= new NYAnanasPizza();
-        }*/
+        }
 
         return pizza;
     }
