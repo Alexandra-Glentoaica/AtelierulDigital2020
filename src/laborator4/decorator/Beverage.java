@@ -1,8 +1,8 @@
 package laborator4.decorator;
 
 public abstract class Beverage {
-    private String description;
-    private int cost;
+    protected String description;
+    protected int cost;
 
     public Beverage(int cost,String description) {
         this.cost = cost;
