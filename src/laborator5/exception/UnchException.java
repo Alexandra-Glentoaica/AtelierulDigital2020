@@ -1,4 +1,4 @@
-package laborator4.exception;
+package laborator5.exception;
 
 public class UnchException extends RuntimeException { //extinde Runtime pentru ca este neverificata
     public UnchException(String message){

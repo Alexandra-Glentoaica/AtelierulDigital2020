@@ -1,4 +1,4 @@
-package laborator4.exception;
+package laborator5.exception;
 
 public class Main {
     public static void main(String[] args) {

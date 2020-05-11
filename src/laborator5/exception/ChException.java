@@ -1,4 +1,4 @@
-package laborator4.exception;
+package laborator5.exception;
 
 public class ChException extends Exception {
     public ChException(String message){
