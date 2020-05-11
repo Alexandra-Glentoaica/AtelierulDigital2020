@@ -8,8 +8,9 @@ public abstract class CondimentDecorator extends Beverage {
         this.beverage=beverage;
     }
 
+    @Override
     public int getCost(){
-        return super.getCost() + beverage.getCost();
+        return super.getCost()+beverage.getCost(); //Cazul "default" in care bauturii de baza nu ii este setata nicio dimensiune;
     }
 
     public String getDescription() {
