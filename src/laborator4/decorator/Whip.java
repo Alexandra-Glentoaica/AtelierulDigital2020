@@ -6,16 +6,10 @@ public class Whip extends CondimentDecorator {
         super("White whip", 1, beverage);
     }
 
-   /* @Override
-    public int getCost(){
-        if(beverage.getSize().equals("Tall"))
-            return beverage.getCost()+1;
-        else if(beverage.getSize().equals("Grande"))
-            return beverage.getCost()+1;
-        else if(beverage.getSize().equals("Venti"))
-            return beverage.getCost()+2;
 
-        else return super.getCost()+beverage.getCost();
-    } */
+    @Override
+    public String getSize(){
+        return this.beverage.getSize();
+    }
 
 }

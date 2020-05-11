@@ -34,9 +34,9 @@ public class Main {
         decaf= new Mocha(decaf);
         decaf = new Whip(decaf);
 
-       /* Beverage houseblend= new HouseBlend();
+       Beverage houseblend= new HouseBlend();
         houseblend.setSize("Tall");
-        houseblend=new Whip(houseblend); */
+        houseblend=new Whip(houseblend);
 
 
        /* System.out.println(drw.getDescription() + "," + drw.getCost());
@@ -46,6 +46,6 @@ public class Main {
         System.out.println(simpleEspresso.getDescription() + ", cost: " + simpleEspresso.getCost() + " $");
         System.out.println(darkRoast.getDescription() + ", cost: " + darkRoast.getCost() + " $");
         System.out.println(decaf.getDescription() + ", cost: " + decaf.getCost() + " $");
-        //System.out.println(houseblend.getDescription() + ", cost: " + houseblend.getCost() + " $");
+        System.out.println(houseblend.getDescription() + ", cost: " + houseblend.getCost() + " $");
     }
 }

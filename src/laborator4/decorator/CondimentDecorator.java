@@ -10,7 +10,13 @@ public abstract class CondimentDecorator extends Beverage {
 
     @Override
     public int getCost(){
-        return super.getCost()+beverage.getCost(); //Cazul "default" in care bauturii de baza nu ii este setata nicio dimensiune;
+        if(getSize().equals("Tall"))
+            return beverage.getCost()+1;
+        else if(getSize().equals("Grande"))
+            return beverage.getCost()+2;
+        else if(getSize().equals("Venti"))
+            return beverage.getCost()+3;
+        else return super.getCost()+beverage.getCost();
     }
 
     public String getDescription() {
